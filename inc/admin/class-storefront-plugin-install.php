@@ -28,11 +28,10 @@ if ( ! class_exists( 'Storefront_Plugin_Install' ) ) :
 		/**
 		 * Load plugin install scripts
 		 *
-		 * @param string $hook_suffix the current page hook suffix.
 		 * @return void
 		 * @since  1.4.4
 		 */
-		public function plugin_install_scripts( $hook_suffix ) {
+		public function plugin_install_scripts() {
 			global $storefront_version;
 
 			$suffix = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '' : '.min';
