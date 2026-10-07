@@ -85,7 +85,7 @@ if ( ! class_exists( 'Storefront_WooCommerce_Adjacent_Products' ) ) :
 			$seen = array();
 
 			// Try to get a valid product via `get_adjacent_post()`.
-			// phpcs:ignore WordPress.CodeAnalysis.AssignmentInCondition.FoundInWhileCondition
+			// phpcs:ignore Generic.CodeAnalysis.AssignmentInCondition.FoundInWhileCondition
 			while ( $adjacent = $this->get_adjacent() ) {
 				if ( isset( $seen[ $adjacent->ID ] ) ) {
 					break; // give up if we're not making progress.
